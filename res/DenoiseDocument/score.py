@@ -5,6 +5,6 @@ prediction = np.load("/data/predictions.npy")
 
 distance = np.mean(np.abs(labels - prediction))
 
-inverse_distance = 1 / (distance+1)
+inverse_distance = 1 / (5*distance+1)
 
 print(f"score:{inverse_distance}")
